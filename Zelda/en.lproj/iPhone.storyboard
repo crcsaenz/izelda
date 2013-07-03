@@ -1,0 +1,656 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="uYt-m6-geG">
+    <dependencies>
+        <deployment defaultVersion="1296" identifier="iOS"/>
+        <development defaultVersion="4200" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
+    </dependencies>
+    <scenes>
+        <!--Zelda Quest Log View Controller-->
+        <scene sceneID="yVT-Io-eX2">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yyZ-SW-x7d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="Llw-OQ-cwH" customClass="ZeldaQuestLogViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hfQ-R5-fke">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="sPC-Xy-5iz">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="367"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFill" image="Hyrule.png" id="U2e-ps-Gc2">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="367"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" image="ZeldaLogo.png" id="Z9x-Os-u9G">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="190"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ilc-vU-oSL">
+                                <rect key="frame" x="10" y="190" width="100" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                                <state key="normal" title="Quest Log 1" backgroundImage="FileButton.png">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" alpha="0.0" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="H5e-Jp-acM">
+                                <rect key="frame" x="120" y="190" width="190" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                                <state key="normal" backgroundImage="FileButton.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playQuestLog:" destination="Llw-OQ-cwH" eventType="touchUpInside" id="oqo-aa-XKH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="WiD-nB-TpB">
+                                <rect key="frame" x="10" y="235" width="100" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                                <state key="normal" title="Quest Log 2" backgroundImage="FileButton.png">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" alpha="0.0" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="5Ag-RP-fX7">
+                                <rect key="frame" x="120" y="235" width="190" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                                <state key="normal" backgroundImage="FileButton.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playQuestLog:" destination="Llw-OQ-cwH" eventType="touchUpInside" id="Asa-Xv-a5h"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="aSq-eA-9rg">
+                                <rect key="frame" x="10" y="280" width="100" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                                <state key="normal" title="Quest Log 3" backgroundImage="FileButton.png">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" alpha="0.0" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="xmX-uq-jgW">
+                                <rect key="frame" x="120" y="280" width="190" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                                <state key="normal" backgroundImage="FileButton.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playQuestLog:" destination="Llw-OQ-cwH" eventType="touchUpInside" id="qB5-MU-ivB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="sO3-jv-4Em">
+                                <rect key="frame" x="110" y="325" width="100" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Clear Logs" backgroundImage="FileButton.png">
+                                    <color key="titleColor" red="0.36100968070652173" green="0.017010322354659366" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearLogs" destination="Llw-OQ-cwH" eventType="touchUpInside" id="TCm-UK-Wmj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="GUv-DU-amP">
+                                <rect key="frame" x="70" y="230" width="180" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="StartButton.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="aXv-bH-PoL"/>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="U2e-ps-Gc2" id="gRQ-3t-EQx"/>
+                        <outlet property="clearLogsButton" destination="sO3-jv-4Em" id="GJ5-qU-E2N"/>
+                        <outlet property="file1Button" destination="H5e-Jp-acM" id="x64-AW-NE4"/>
+                        <outlet property="file1LabelButton" destination="ilc-vU-oSL" id="hS0-QJ-GEe"/>
+                        <outlet property="file2Button" destination="5Ag-RP-fX7" id="TMa-Qf-g9I"/>
+                        <outlet property="file2LabelButton" destination="WiD-nB-TpB" id="pWY-Uq-G1o"/>
+                        <outlet property="file3Button" destination="xmX-uq-jgW" id="WcB-gQ-2Uf"/>
+                        <outlet property="file3LabelButton" destination="aSq-eA-9rg" id="1tS-19-UIN"/>
+                        <outlet property="logoImageView" destination="Z9x-Os-u9G" id="qlN-s6-KRg"/>
+                        <outlet property="scrollView" destination="sPC-Xy-5iz" id="TLT-di-L6I"/>
+                        <outlet property="startLabel" destination="GUv-DU-amP" id="L7k-rQ-qKs"/>
+                        <segue destination="IdL-tJ-Mml" kind="push" identifier="Play Quest Log" id="Wez-bg-Alk"/>
+                        <segue destination="oDY-MT-hyC" kind="modal" identifier="Create New File" id="n1K-uq-8JV"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1511" y="-201"/>
+        </scene>
+        <!--Zelda Hero View Controller-->
+        <scene sceneID="Eez-Xd-7Eh">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2ln-Sf-SaL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="oDY-MT-hyC" customClass="ZeldaHeroViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h5I-q9-BMO">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Hero Name" minimumFontSize="17" id="bkx-Ux-UhS">
+                                <rect key="frame" x="112" y="20" width="97" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="KRD-RV-5Qq">
+                                <rect key="frame" x="77" y="333" width="167" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Choose Hero Image">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pickImage" destination="oDY-MT-hyC" eventType="touchUpInside" id="4lT-Af-txe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="aUL-cf-Dgo">
+                                <rect key="frame" x="20" y="403" width="160" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Save and Continue">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveHero" destination="oDY-MT-hyC" eventType="touchUpInside" id="hPe-Vk-gkp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ioz-cB-9Nl">
+                                <rect key="frame" x="226" y="403" width="74" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancel" destination="oDY-MT-hyC" eventType="touchUpInside" id="eCa-mM-ndx"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="SBC-9K-vYx">
+                                <rect key="frame" x="40" y="85" width="240" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="heroImageView" destination="SBC-9K-vYx" id="vy9-U9-fdE"/>
+                        <outlet property="heroNameTextField" destination="bkx-Ux-UhS" id="WlF-z2-wg8"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1914" y="-544"/>
+        </scene>
+        <!--Zelda Dodongo Bomb View Controller-->
+        <scene sceneID="XhK-wj-i96">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QJG-q4-elC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="IdL-tJ-Mml" customClass="ZeldaDodongoBombViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GeE-i6-oo0">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="DodongoLogo.png" id="EVY-q2-ZNn">
+                                <rect key="frame" x="20" y="50" width="280" height="188"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Oru-3h-033">
+                                <rect key="frame" x="70" y="270" width="180" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Tap To Start" backgroundImage="FileButton.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startGame" destination="IdL-tJ-Mml" eventType="touchUpInside" id="Pth-v5-nm6"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" image="FileButton.png" id="O0h-KS-hwp">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" id="KXm-CX-2rg">
+                                <rect key="frame" x="10" y="5" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" image="FileButton.png" id="6jK-Io-2cZ">
+                                <rect key="frame" x="0.0" y="317" width="320" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" image="DungeonRoomWalls.png" id="mLm-Kn-tJe">
+                                <rect key="frame" x="0.0" y="50" width="320" height="267"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" image="DungeonRoom.png" id="T20-LU-xrg">
+                                <rect key="frame" x="41" y="87" width="239" height="194"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" image="Bomb.png" id="FtY-ex-9As">
+                                <rect key="frame" x="10" y="320" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="eMs-FL-vwE">
+                                <rect key="frame" x="70" y="169" width="180" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Back To Quest Log" backgroundImage="FileButton.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backToQuestLog:" destination="IdL-tJ-Mml" eventType="touchUpInside" id="3Cb-1l-hfm"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="jUr-Cz-yuk">
+                                <rect key="frame" x="55" y="320" width="60" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="left" text="Score: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="iK3-pj-d5x">
+                                <rect key="frame" x="135" y="320" width="180" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="left" text="Time Left: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" id="AmG-Fb-wI6">
+                                <rect key="frame" x="80" y="287" width="160" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.75" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="jkd-9P-8iA">
+                                <rect key="frame" x="60" y="5" width="100" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="s0I-tp-VXj">
+                                <rect key="frame" x="170" y="5" width="140" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="82c-MS-4T0"/>
+                    <connections>
+                        <outlet property="backButton" destination="eMs-FL-vwE" id="Jtk-xh-qFt"/>
+                        <outlet property="backgroundImageView" destination="T20-LU-xrg" id="knt-Mc-nDQ"/>
+                        <outlet property="bgWallsImageView" destination="mLm-Kn-tJe" id="qEN-Hv-Rzr"/>
+                        <outlet property="bottomBarImageView" destination="6jK-Io-2cZ" id="Lp5-k7-gZe"/>
+                        <outlet property="heroImageView" destination="KXm-CX-2rg" id="fWM-uc-BKB"/>
+                        <outlet property="heroNameLabel" destination="jkd-9P-8iA" id="obw-M5-LI0"/>
+                        <outlet property="highScoreLabel" destination="s0I-tp-VXj" id="klY-LF-kci"/>
+                        <outlet property="hudBombImageView" destination="FtY-ex-9As" id="BX9-O7-uF8"/>
+                        <outlet property="hudBombLabel" destination="jUr-Cz-yuk" id="6WY-mK-rb5"/>
+                        <outlet property="hudClockLabel" destination="AmG-Fb-wI6" id="tAe-t8-06J"/>
+                        <outlet property="hudScoreLabel" destination="iK3-pj-d5x" id="7Se-Mh-7hW"/>
+                        <outlet property="logoImageView" destination="EVY-q2-ZNn" id="04u-B1-5ct"/>
+                        <outlet property="startButton" destination="Oru-3h-033" id="5Oy-uO-16b"/>
+                        <outlet property="topBarImageView" destination="O0h-KS-hwp" id="dom-Zw-bnH"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1914" y="55"/>
+        </scene>
+        <!--Zelda Tab Bar Controller-->
+        <scene sceneID="zhD-KJ-nhq">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nZF-N4-wNt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tabBarController definesPresentationContext="YES" id="uYt-m6-geG" customClass="ZeldaTabBarController" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="UEa-UT-bsZ">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="udE-zE-Mzr" kind="relationship" relationship="viewControllers" id="rmG-83-LGk"/>
+                        <segue destination="GD1-sL-4OL" kind="relationship" relationship="viewControllers" id="Hew-hR-3ra"/>
+                        <segue destination="0c8-ct-YRy" kind="relationship" relationship="viewControllers" id="6j1-Uz-aRI"/>
+                    </connections>
+                </tabBarController>
+            </objects>
+            <point key="canvasLocation" x="640" y="373"/>
+        </scene>
+        <!--Zelda Hero Editor View Controller - Hero Editor-->
+        <scene sceneID="Dai-gK-z29">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vmZ-D7-G42" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="GD1-sL-4OL" customClass="ZeldaHeroEditorViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kc7-OK-R7f">
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" image="HeroEditor.png" id="oLs-7H-Nwc">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="411"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Hero Editor" image="TabBarItem2.png" id="4qI-Ev-ShR"/>
+                    <connections>
+                        <outlet property="bgImageView" destination="oLs-7H-Nwc" id="e0R-kK-T2z"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1114" y="373"/>
+        </scene>
+        <!--Zelda Ocarina View Controller - Ocarina-->
+        <scene sceneID="z44-eI-cXf">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u7h-z3-J4D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="0c8-ct-YRy" customClass="ZeldaOcarinaViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mTv-xo-xMU">
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="OcarinaBG.png" id="H22-AN-sqE">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="411"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="vBR-T5-67n">
+                                <rect key="frame" x="7" y="347" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="OcarinaPlayButton.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="play:" destination="0c8-ct-YRy" eventType="touchUpInside" id="FPL-at-A2v"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7U4-ah-HLz">
+                                <rect key="frame" x="257" y="347" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="OcarinaStopButton.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="stop:" destination="0c8-ct-YRy" eventType="touchUpInside" id="xAG-za-732"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="BLa-K8-weI" userLabel="Note">
+                                <rect key="frame" x="101" y="44" width="65" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="OcarinaNoteButton.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="OcarinaNoteButton-Highlighted.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="notePressed:" destination="0c8-ct-YRy" eventType="touchUpInside" id="3vT-FC-bP7"/>
+                                    <action selector="notePressed:" destination="0c8-ct-YRy" eventType="touchDragExit" id="Tjp-xN-Ewr"/>
+                                    <action selector="notePressed:" destination="0c8-ct-YRy" eventType="touchCancel" id="hCn-zj-J0f"/>
+                                    <action selector="notePressed:" destination="0c8-ct-YRy" eventType="touchUpOutside" id="iMI-gl-VV3"/>
+                                    <action selector="notePressed:" destination="0c8-ct-YRy" eventType="touchDown" id="p15-mH-cLG"/>
+                                    <action selector="notePressed:" destination="0c8-ct-YRy" eventType="touchDragEnter" id="p2X-7M-kio"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="LZo-T0-FPs" userLabel="Note">
+                                <rect key="frame" x="84" y="138" width="67" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="OcarinaNoteButton.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="OcarinaNoteButton-Highlighted.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="notePressed:" destination="0c8-ct-YRy" eventType="touchDragExit" id="0Tw-9l-dJH"/>
+                                    <action selector="notePressed:" destination="0c8-ct-YRy" eventType="touchDragEnter" id="6Vp-zj-1y7"/>
+                                    <action selector="notePressed:" destination="0c8-ct-YRy" eventType="touchUpOutside" id="EPR-uY-jOe"/>
+                                    <action selector="notePressed:" destination="0c8-ct-YRy" eventType="touchUpInside" id="xXY-Oq-ycN"/>
+                                    <action selector="notePressed:" destination="0c8-ct-YRy" eventType="touchDown" id="ymL-3Q-2hg"/>
+                                    <action selector="notePressed:" destination="0c8-ct-YRy" eventType="touchCancel" id="zG2-Wk-bnP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rNL-jn-8nW" userLabel="Note">
+                                <rect key="frame" x="153" y="205" width="67" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="OcarinaNoteButton.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="OcarinaNoteButton-Highlighted.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="notePressed:" destination="0c8-ct-YRy" eventType="touchUpInside" id="0Zg-Az-F9b"/>
+                                    <action selector="notePressed:" destination="0c8-ct-YRy" eventType="touchDragExit" id="KQI-m7-QSZ"/>
+                                    <action selector="notePressed:" destination="0c8-ct-YRy" eventType="touchDragEnter" id="PtT-aI-Cis"/>
+                                    <action selector="notePressed:" destination="0c8-ct-YRy" eventType="touchUpOutside" id="WCL-A6-qON"/>
+                                    <action selector="notePressed:" destination="0c8-ct-YRy" eventType="touchDown" id="gEj-Mq-t9i"/>
+                                    <action selector="notePressed:" destination="0c8-ct-YRy" eventType="touchCancel" id="lAD-fo-Mwu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="JyG-qM-s5X" userLabel="Note">
+                                <rect key="frame" x="155" y="318" width="67" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="OcarinaNoteButton.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="OcarinaNoteButton-Highlighted.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="notePressed:" destination="0c8-ct-YRy" eventType="touchUpInside" id="BYV-SK-VDW"/>
+                                    <action selector="notePressed:" destination="0c8-ct-YRy" eventType="touchUpOutside" id="D4o-WS-iYn"/>
+                                    <action selector="notePressed:" destination="0c8-ct-YRy" eventType="touchDragExit" id="L4t-Ki-Ftt"/>
+                                    <action selector="notePressed:" destination="0c8-ct-YRy" eventType="touchDragEnter" id="hNx-l3-Ez6"/>
+                                    <action selector="notePressed:" destination="0c8-ct-YRy" eventType="touchCancel" id="wI8-Br-hQ2"/>
+                                    <action selector="notePressed:" destination="0c8-ct-YRy" eventType="touchDown" id="xHZ-uC-HdQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Ocarina" image="TabBarItem3.png" id="7Mh-UQ-1Y8"/>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="H22-AN-sqE" id="wCs-5L-1Qf"/>
+                        <outlet property="noteButton1" destination="BLa-K8-weI" id="LTx-WU-ZPY"/>
+                        <outlet property="noteButton2" destination="LZo-T0-FPs" id="nc7-pm-RCP"/>
+                        <outlet property="noteButton3" destination="rNL-jn-8nW" id="DWR-jP-qhX"/>
+                        <outlet property="noteButton4" destination="JyG-qM-s5X" id="H5k-9t-lx4"/>
+                        <outlet property="playButton" destination="vBR-T5-67n" id="ShF-8o-vJL"/>
+                        <outlet property="stopButton" destination="7U4-ah-HLz" id="cT9-SA-pOx"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1114" y="950"/>
+        </scene>
+        <!--Navigation Controller - Quest-->
+        <scene sceneID="hLU-pS-ngK">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KgU-Iw-Mx3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="udE-zE-Mzr" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Quest" image="TabBarItem1.png" id="bDO-Ka-m7u"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="UfM-Gy-sYg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Llw-OQ-cwH" kind="relationship" relationship="rootViewController" id="FTh-Ga-FwX"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="1114" y="-201"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Bomb.png" width="100" height="124"/>
+        <image name="DodongoLogo.png" width="800" height="575"/>
+        <image name="DungeonRoom.png" width="373" height="322"/>
+        <image name="DungeonRoomWalls.png" width="500" height="443"/>
+        <image name="FileButton.png" width="260" height="60"/>
+        <image name="HeroEditor.png" width="540" height="640"/>
+        <image name="Hyrule.png" width="791" height="450"/>
+        <image name="OcarinaBG.png" width="252" height="374"/>
+        <image name="OcarinaNoteButton-Highlighted.png" width="360" height="360"/>
+        <image name="OcarinaNoteButton.png" width="360" height="360"/>
+        <image name="OcarinaPlayButton.png" width="360" height="360"/>
+        <image name="OcarinaStopButton.png" width="360" height="360"/>
+        <image name="StartButton.png" width="300" height="40"/>
+        <image name="TabBarItem1.png" width="30" height="30"/>
+        <image name="TabBarItem2.png" width="30" height="30"/>
+        <image name="TabBarItem3.png" width="30" height="30"/>
+        <image name="ZeldaLogo.png" width="648" height="374"/>
+    </resources>
+    <classes>
+        <class className="ZeldaDodongoBombViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ZeldaDodongoBombViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="backButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="backgroundImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="bgWallsImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="bottomBarImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="heroImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="heroNameLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="highScoreLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="hudBombImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="hudBombLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="hudClockLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="hudScoreLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="logoImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="startButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="topBarImageView" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="ZeldaHeroEditorViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ZeldaHeroEditorViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="bgImageView" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="ZeldaHeroViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ZeldaHeroViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="heroImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="heroNameTextField" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="ZeldaOcarinaViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ZeldaOcarinaViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="backgroundImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="noteButton1" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="noteButton2" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="noteButton3" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="noteButton4" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="playButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="stopButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="ZeldaQuestLogViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ZeldaQuestLogViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="backgroundImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="clearLogsButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="file1Button" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="file1LabelButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="file2Button" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="file2LabelButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="file3Button" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="file3LabelButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="logoImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+                <relationship kind="outlet" name="startLabel" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="ZeldaTabBarController" superclassName="UITabBarController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ZeldaTabBarController.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

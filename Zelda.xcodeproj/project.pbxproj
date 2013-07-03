@@ -1,0 +1,646 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B683FB0157D101D00EB474D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B683FAE157D0FF100EB474D /* AudioToolbox.framework */; };
+		6B73BB8B15775C7200BA56ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B73BB8A15775C7200BA56ED /* UIKit.framework */; };
+		6B73BB8D15775C7200BA56ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B73BB8C15775C7200BA56ED /* Foundation.framework */; };
+		6B73BB8F15775C7200BA56ED /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B73BB8E15775C7200BA56ED /* CoreGraphics.framework */; };
+		6B73BB9515775C7200BA56ED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6B73BB9315775C7200BA56ED /* InfoPlist.strings */; };
+		6B73BB9715775C7200BA56ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B73BB9615775C7200BA56ED /* main.m */; };
+		6B73BB9B15775C7200BA56ED /* ZeldaAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B73BB9A15775C7200BA56ED /* ZeldaAppDelegate.m */; };
+		6B73BB9E15775C7200BA56ED /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B73BB9C15775C7200BA56ED /* iPhone.storyboard */; };
+		6B73BBB01577674F00BA56ED /* ZeldaTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B73BBAF1577674F00BA56ED /* ZeldaTabBarController.m */; };
+		6B75508215787C5D0035E203 /* ZeldaHeroEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B75508115787C5D0035E203 /* ZeldaHeroEditorViewController.m */; };
+		6B75508615787C770035E203 /* ZeldaOcarinaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B75508515787C770035E203 /* ZeldaOcarinaViewController.m */; };
+		6B80E7BF15816E10008D57C5 /* AppIcon-57.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B80E7BD15816E10008D57C5 /* AppIcon-57.png */; };
+		6B80E7C015816E10008D57C5 /* AppIcon-114.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B80E7BE15816E10008D57C5 /* AppIcon-114.png */; };
+		6B9271DC157B5F9C00D37BA9 /* TabBarItem1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B9271D9157B5F9C00D37BA9 /* TabBarItem1.png */; };
+		6B9271DD157B5F9C00D37BA9 /* TabBarItem2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B9271DA157B5F9C00D37BA9 /* TabBarItem2.png */; };
+		6B9271DE157B5F9C00D37BA9 /* TabBarItem3.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B9271DB157B5F9C00D37BA9 /* TabBarItem3.png */; };
+		6B9271E3157B677300D37BA9 /* Ravenna.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B9271E2157B677300D37BA9 /* Ravenna.ttf */; };
+		6B9271F2157C215300D37BA9 /* Hyrule.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B9271F1157C215300D37BA9 /* Hyrule.png */; };
+		6B9271F5157C26BA00D37BA9 /* ZeldaAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B9271F4157C26BA00D37BA9 /* ZeldaAudio.m */; };
+		6B9271F8157C280600D37BA9 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B9271F6157C27E100D37BA9 /* AVFoundation.framework */; };
+		6B9271FC157C308500D37BA9 /* OcarinaOfTimeIntro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B9271FB157C308500D37BA9 /* OcarinaOfTimeIntro.mp3 */; };
+		6B927206157C6C7A00D37BA9 /* BalladOfTheGoddess.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B9271FE157C6C7A00D37BA9 /* BalladOfTheGoddess.mp3 */; };
+		6B927207157C6C7A00D37BA9 /* FairyFountain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B9271FF157C6C7A00D37BA9 /* FairyFountain.mp3 */; };
+		6B927208157C6C7A00D37BA9 /* GerudoValley.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B927200157C6C7A00D37BA9 /* GerudoValley.mp3 */; };
+		6B927209157C6C7A00D37BA9 /* KakarikoVillage.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B927201157C6C7A00D37BA9 /* KakarikoVillage.mp3 */; };
+		6B92720A157C6C7A00D37BA9 /* MainThemeMedley.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B927202157C6C7A00D37BA9 /* MainThemeMedley.mp3 */; };
+		6B92720B157C6C7A00D37BA9 /* TwilightPrincessMovement.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B927203157C6C7A00D37BA9 /* TwilightPrincessMovement.mp3 */; };
+		6B92720C157C6C7A00D37BA9 /* WindWakerMovement.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B927204157C6C7A00D37BA9 /* WindWakerMovement.mp3 */; };
+		6B92720D157C6C7A00D37BA9 /* ZeldaMedley.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B927205157C6C7A00D37BA9 /* ZeldaMedley.mp3 */; };
+		6B942BFD157E425700376FB8 /* StartButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B942BFC157E425700376FB8 /* StartButton.png */; };
+		6B995396157D2206002C428E /* OcarinaNote1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B995391157D2206002C428E /* OcarinaNote1.mp3 */; };
+		6B995397157D2206002C428E /* OcarinaNote2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B995392157D2206002C428E /* OcarinaNote2.mp3 */; };
+		6B995398157D2206002C428E /* OcarinaNote3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B995393157D2206002C428E /* OcarinaNote3.mp3 */; };
+		6B995399157D2206002C428E /* OcarinaNote4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B995394157D2206002C428E /* OcarinaNote4.mp3 */; };
+		6B99539A157D2206002C428E /* OcarinaNote5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B995395157D2206002C428E /* OcarinaNote5.mp3 */; };
+		6B99539C157D810F002C428E /* OcarinaBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B99539B157D810F002C428E /* OcarinaBG.png */; };
+		6B99539E157D8407002C428E /* OcarinaPlayButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B99539D157D8407002C428E /* OcarinaPlayButton.png */; };
+		6B9953A0157D84D4002C428E /* OcarinaStopButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B99539F157D84D4002C428E /* OcarinaStopButton.png */; };
+		6BAA2954157EFAA500CCD5EC /* OcarinaNoteButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BAA2953157EFAA500CCD5EC /* OcarinaNoteButton.png */; };
+		6BAA2957157FD6C700CCD5EC /* OcarinaNoteButton-Highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BAA2956157FD6C700CCD5EC /* OcarinaNoteButton-Highlighted.png */; };
+		6BDBC4E2157E2AB0001EE18A /* FairyFountainGuitar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6BDBC4E1157E2AB0001EE18A /* FairyFountainGuitar.mp3 */; };
+		6BDBC4E5157E2E24001EE18A /* UIView+Fade.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BDBC4E4157E2E24001EE18A /* UIView+Fade.m */; };
+		6BDC7D51157C97A00019F951 /* FileButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BDC7D50157C97A00019F951 /* FileButton.png */; };
+		6BDC7D55157CA03E0019F951 /* ZeldaLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BDC7D54157CA03E0019F951 /* ZeldaLogo.png */; };
+		6BDC7D5A157CD13C0019F951 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BDC7D59157CD13C0019F951 /* Default.png */; };
+		6BDC7D5C157CD2880019F951 /* AncientHylian.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6BDC7D5B157CD2880019F951 /* AncientHylian.ttf */; };
+		6BE911271581A92900C209F9 /* ZeldaDodongoBombViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE911221581A92900C209F9 /* ZeldaDodongoBombViewController.m */; };
+		6BE911281581A92900C209F9 /* ZeldaQuestLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE911241581A92900C209F9 /* ZeldaQuestLogViewController.m */; };
+		6BE9112E1581B77D00C209F9 /* ZeldaDodongo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE9112D1581B77D00C209F9 /* ZeldaDodongo.m */; };
+		6BE911311581B79800C209F9 /* ZeldaBomb.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE911301581B79800C209F9 /* ZeldaBomb.m */; };
+		6BE911341581DF2500C209F9 /* Bomb.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BE911321581DF2500C209F9 /* Bomb.png */; };
+		6BE911351581DF2500C209F9 /* DodongoLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BE911331581DF2500C209F9 /* DodongoLogo.png */; };
+		6BE911391582059000C209F9 /* DungeonRoom.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BE911381582059000C209F9 /* DungeonRoom.png */; };
+		6BE9113B1582088100C209F9 /* DungeonRoomWalls.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BE9113A1582088100C209F9 /* DungeonRoomWalls.png */; };
+		6BE9113F1582D40900C209F9 /* ExplodeBomb.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6BE9113D1582D40900C209F9 /* ExplodeBomb.wav */; };
+		6BE911401582D40900C209F9 /* PlaceBomb.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6BE9113E1582D40900C209F9 /* PlaceBomb.wav */; };
+		6BE911491582F51400C209F9 /* DodongoDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BE911451582F51300C209F9 /* DodongoDown.png */; };
+		6BE9114A1582F51400C209F9 /* DodongoLeft.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BE911461582F51300C209F9 /* DodongoLeft.png */; };
+		6BE9114B1582F51400C209F9 /* DodongoRight.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BE911471582F51300C209F9 /* DodongoRight.png */; };
+		6BE9114C1582F51400C209F9 /* DodongoUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BE911481582F51400C209F9 /* DodongoUp.png */; };
+		6BE9115015830F7500C209F9 /* BombExplode.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BE9114D15830F7400C209F9 /* BombExplode.png */; };
+		6BE9115115830F7500C209F9 /* DodongoDead.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BE9114E15830F7400C209F9 /* DodongoDead.png */; };
+		6BE9115215830F7500C209F9 /* DodongoExplode.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BE9114F15830F7500C209F9 /* DodongoExplode.png */; };
+		6BE911541583101100C209F9 /* KillDodongo.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6BE911531583101100C209F9 /* KillDodongo.wav */; };
+		6BE91156158337AE00C209F9 /* HeroEditor.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BE91155158337AE00C209F9 /* HeroEditor.png */; };
+		6BE9115D1583479500C209F9 /* ZeldaHeroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE9115C1583479400C209F9 /* ZeldaHeroViewController.m */; };
+		6BE9115F158355DA00C209F9 /* DefaultHero.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BE9115E158355DA00C209F9 /* DefaultHero.png */; };
+		6BE9116215837F8600C209F9 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BE9116015837F6F00C209F9 /* MobileCoreServices.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6B683FAE157D0FF100EB474D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		6B73BB8615775C7200BA56ED /* Zelda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zelda.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B73BB8A15775C7200BA56ED /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6B73BB8C15775C7200BA56ED /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6B73BB8E15775C7200BA56ED /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6B73BB9215775C7200BA56ED /* Zelda-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Zelda-Info.plist"; sourceTree = "<group>"; };
+		6B73BB9415775C7200BA56ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6B73BB9615775C7200BA56ED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6B73BB9815775C7200BA56ED /* Zelda-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Zelda-Prefix.pch"; sourceTree = "<group>"; };
+		6B73BB9915775C7200BA56ED /* ZeldaAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZeldaAppDelegate.h; sourceTree = "<group>"; };
+		6B73BB9A15775C7200BA56ED /* ZeldaAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZeldaAppDelegate.m; sourceTree = "<group>"; };
+		6B73BB9D15775C7200BA56ED /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/iPhone.storyboard; sourceTree = "<group>"; };
+		6B73BBAE1577674F00BA56ED /* ZeldaTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZeldaTabBarController.h; sourceTree = "<group>"; };
+		6B73BBAF1577674F00BA56ED /* ZeldaTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZeldaTabBarController.m; sourceTree = "<group>"; };
+		6B75508015787C5D0035E203 /* ZeldaHeroEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZeldaHeroEditorViewController.h; path = "Hero Editor/ZeldaHeroEditorViewController.h"; sourceTree = "<group>"; };
+		6B75508115787C5D0035E203 /* ZeldaHeroEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZeldaHeroEditorViewController.m; path = "Hero Editor/ZeldaHeroEditorViewController.m"; sourceTree = "<group>"; };
+		6B75508415787C770035E203 /* ZeldaOcarinaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZeldaOcarinaViewController.h; path = Ocarina/ZeldaOcarinaViewController.h; sourceTree = "<group>"; };
+		6B75508515787C770035E203 /* ZeldaOcarinaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZeldaOcarinaViewController.m; path = Ocarina/ZeldaOcarinaViewController.m; sourceTree = "<group>"; };
+		6B80E7BD15816E10008D57C5 /* AppIcon-57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "AppIcon-57.png"; path = "Images/AppIcon-57.png"; sourceTree = "<group>"; };
+		6B80E7BE15816E10008D57C5 /* AppIcon-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "AppIcon-114.png"; path = "Images/AppIcon-114.png"; sourceTree = "<group>"; };
+		6B9271D9157B5F9C00D37BA9 /* TabBarItem1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TabBarItem1.png; path = Images/TabBarItem1.png; sourceTree = "<group>"; };
+		6B9271DA157B5F9C00D37BA9 /* TabBarItem2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TabBarItem2.png; path = Images/TabBarItem2.png; sourceTree = "<group>"; };
+		6B9271DB157B5F9C00D37BA9 /* TabBarItem3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TabBarItem3.png; path = Images/TabBarItem3.png; sourceTree = "<group>"; };
+		6B9271E2157B677300D37BA9 /* Ravenna.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ravenna.ttf; sourceTree = "<group>"; };
+		6B9271F1157C215300D37BA9 /* Hyrule.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Hyrule.png; path = Images/Hyrule.png; sourceTree = "<group>"; };
+		6B9271F3157C26BA00D37BA9 /* ZeldaAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZeldaAudio.h; sourceTree = "<group>"; };
+		6B9271F4157C26BA00D37BA9 /* ZeldaAudio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZeldaAudio.m; sourceTree = "<group>"; };
+		6B9271F6157C27E100D37BA9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		6B9271FB157C308500D37BA9 /* OcarinaOfTimeIntro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = OcarinaOfTimeIntro.mp3; sourceTree = "<group>"; };
+		6B9271FE157C6C7A00D37BA9 /* BalladOfTheGoddess.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BalladOfTheGoddess.mp3; sourceTree = "<group>"; };
+		6B9271FF157C6C7A00D37BA9 /* FairyFountain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = FairyFountain.mp3; sourceTree = "<group>"; };
+		6B927200157C6C7A00D37BA9 /* GerudoValley.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = GerudoValley.mp3; sourceTree = "<group>"; };
+		6B927201157C6C7A00D37BA9 /* KakarikoVillage.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = KakarikoVillage.mp3; sourceTree = "<group>"; };
+		6B927202157C6C7A00D37BA9 /* MainThemeMedley.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MainThemeMedley.mp3; sourceTree = "<group>"; };
+		6B927203157C6C7A00D37BA9 /* TwilightPrincessMovement.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TwilightPrincessMovement.mp3; sourceTree = "<group>"; };
+		6B927204157C6C7A00D37BA9 /* WindWakerMovement.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = WindWakerMovement.mp3; sourceTree = "<group>"; };
+		6B927205157C6C7A00D37BA9 /* ZeldaMedley.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ZeldaMedley.mp3; sourceTree = "<group>"; };
+		6B942BFC157E425700376FB8 /* StartButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = StartButton.png; path = Images/StartButton.png; sourceTree = "<group>"; };
+		6B995391157D2206002C428E /* OcarinaNote1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = OcarinaNote1.mp3; sourceTree = "<group>"; };
+		6B995392157D2206002C428E /* OcarinaNote2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = OcarinaNote2.mp3; sourceTree = "<group>"; };
+		6B995393157D2206002C428E /* OcarinaNote3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = OcarinaNote3.mp3; sourceTree = "<group>"; };
+		6B995394157D2206002C428E /* OcarinaNote4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = OcarinaNote4.mp3; sourceTree = "<group>"; };
+		6B995395157D2206002C428E /* OcarinaNote5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = OcarinaNote5.mp3; sourceTree = "<group>"; };
+		6B99539B157D810F002C428E /* OcarinaBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = OcarinaBG.png; path = Images/OcarinaBG.png; sourceTree = "<group>"; };
+		6B99539D157D8407002C428E /* OcarinaPlayButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = OcarinaPlayButton.png; path = Images/OcarinaPlayButton.png; sourceTree = "<group>"; };
+		6B99539F157D84D4002C428E /* OcarinaStopButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = OcarinaStopButton.png; path = Images/OcarinaStopButton.png; sourceTree = "<group>"; };
+		6BAA2953157EFAA500CCD5EC /* OcarinaNoteButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = OcarinaNoteButton.png; path = Images/OcarinaNoteButton.png; sourceTree = "<group>"; };
+		6BAA2956157FD6C700CCD5EC /* OcarinaNoteButton-Highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "OcarinaNoteButton-Highlighted.png"; path = "Images/OcarinaNoteButton-Highlighted.png"; sourceTree = "<group>"; };
+		6BDBC4E1157E2AB0001EE18A /* FairyFountainGuitar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = FairyFountainGuitar.mp3; sourceTree = "<group>"; };
+		6BDBC4E3157E2E24001EE18A /* UIView+Fade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Fade.h"; sourceTree = "<group>"; };
+		6BDBC4E4157E2E24001EE18A /* UIView+Fade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Fade.m"; sourceTree = "<group>"; };
+		6BDC7D50157C97A00019F951 /* FileButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FileButton.png; path = Images/FileButton.png; sourceTree = "<group>"; };
+		6BDC7D54157CA03E0019F951 /* ZeldaLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ZeldaLogo.png; path = Images/ZeldaLogo.png; sourceTree = "<group>"; };
+		6BDC7D59157CD13C0019F951 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Images/Default.png; sourceTree = "<group>"; };
+		6BDC7D5B157CD2880019F951 /* AncientHylian.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AncientHylian.ttf; sourceTree = "<group>"; };
+		6BE911211581A92900C209F9 /* ZeldaDodongoBombViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZeldaDodongoBombViewController.h; sourceTree = "<group>"; };
+		6BE911221581A92900C209F9 /* ZeldaDodongoBombViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZeldaDodongoBombViewController.m; sourceTree = "<group>"; };
+		6BE911231581A92900C209F9 /* ZeldaQuestLogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZeldaQuestLogViewController.h; sourceTree = "<group>"; };
+		6BE911241581A92900C209F9 /* ZeldaQuestLogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZeldaQuestLogViewController.m; sourceTree = "<group>"; };
+		6BE9112C1581B77D00C209F9 /* ZeldaDodongo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZeldaDodongo.h; sourceTree = "<group>"; };
+		6BE9112D1581B77D00C209F9 /* ZeldaDodongo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZeldaDodongo.m; sourceTree = "<group>"; };
+		6BE9112F1581B79800C209F9 /* ZeldaBomb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZeldaBomb.h; sourceTree = "<group>"; };
+		6BE911301581B79800C209F9 /* ZeldaBomb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZeldaBomb.m; sourceTree = "<group>"; };
+		6BE911321581DF2500C209F9 /* Bomb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Bomb.png; path = Images/Bomb.png; sourceTree = "<group>"; };
+		6BE911331581DF2500C209F9 /* DodongoLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = DodongoLogo.png; path = Images/DodongoLogo.png; sourceTree = "<group>"; };
+		6BE911381582059000C209F9 /* DungeonRoom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = DungeonRoom.png; path = Images/DungeonRoom.png; sourceTree = "<group>"; };
+		6BE9113A1582088100C209F9 /* DungeonRoomWalls.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = DungeonRoomWalls.png; path = Images/DungeonRoomWalls.png; sourceTree = "<group>"; };
+		6BE9113D1582D40900C209F9 /* ExplodeBomb.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = ExplodeBomb.wav; path = FX/ExplodeBomb.wav; sourceTree = "<group>"; };
+		6BE9113E1582D40900C209F9 /* PlaceBomb.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = PlaceBomb.wav; path = FX/PlaceBomb.wav; sourceTree = "<group>"; };
+		6BE911451582F51300C209F9 /* DodongoDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = DodongoDown.png; path = Images/DodongoDown.png; sourceTree = "<group>"; };
+		6BE911461582F51300C209F9 /* DodongoLeft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = DodongoLeft.png; path = Images/DodongoLeft.png; sourceTree = "<group>"; };
+		6BE911471582F51300C209F9 /* DodongoRight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = DodongoRight.png; path = Images/DodongoRight.png; sourceTree = "<group>"; };
+		6BE911481582F51400C209F9 /* DodongoUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = DodongoUp.png; path = Images/DodongoUp.png; sourceTree = "<group>"; };
+		6BE9114D15830F7400C209F9 /* BombExplode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BombExplode.png; path = Images/BombExplode.png; sourceTree = "<group>"; };
+		6BE9114E15830F7400C209F9 /* DodongoDead.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = DodongoDead.png; path = Images/DodongoDead.png; sourceTree = "<group>"; };
+		6BE9114F15830F7500C209F9 /* DodongoExplode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = DodongoExplode.png; path = Images/DodongoExplode.png; sourceTree = "<group>"; };
+		6BE911531583101100C209F9 /* KillDodongo.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = KillDodongo.wav; path = FX/KillDodongo.wav; sourceTree = "<group>"; };
+		6BE91155158337AE00C209F9 /* HeroEditor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = HeroEditor.png; path = Images/HeroEditor.png; sourceTree = "<group>"; };
+		6BE9115B1583479400C209F9 /* ZeldaHeroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZeldaHeroViewController.h; sourceTree = "<group>"; };
+		6BE9115C1583479400C209F9 /* ZeldaHeroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZeldaHeroViewController.m; sourceTree = "<group>"; };
+		6BE9115E158355DA00C209F9 /* DefaultHero.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = DefaultHero.png; path = Images/DefaultHero.png; sourceTree = "<group>"; };
+		6BE9116015837F6F00C209F9 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6B73BB8315775C7200BA56ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BE9116215837F8600C209F9 /* MobileCoreServices.framework in Frameworks */,
+				6B683FB0157D101D00EB474D /* AudioToolbox.framework in Frameworks */,
+				6B9271F8157C280600D37BA9 /* AVFoundation.framework in Frameworks */,
+				6B73BB8B15775C7200BA56ED /* UIKit.framework in Frameworks */,
+				6B73BB8D15775C7200BA56ED /* Foundation.framework in Frameworks */,
+				6B73BB8F15775C7200BA56ED /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6B73BB7B15775C7200BA56ED = {
+			isa = PBXGroup;
+			children = (
+				6B73BB9015775C7200BA56ED /* Zelda */,
+				6B73BB8915775C7200BA56ED /* Frameworks */,
+				6B73BB8715775C7200BA56ED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6B73BB8715775C7200BA56ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6B73BB8615775C7200BA56ED /* Zelda.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6B73BB8915775C7200BA56ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6BE9116015837F6F00C209F9 /* MobileCoreServices.framework */,
+				6B683FAE157D0FF100EB474D /* AudioToolbox.framework */,
+				6B9271F6157C27E100D37BA9 /* AVFoundation.framework */,
+				6B73BB8A15775C7200BA56ED /* UIKit.framework */,
+				6B73BB8C15775C7200BA56ED /* Foundation.framework */,
+				6B73BB8E15775C7200BA56ED /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6B73BB9015775C7200BA56ED /* Zelda */ = {
+			isa = PBXGroup;
+			children = (
+				6B73BB9C15775C7200BA56ED /* iPhone.storyboard */,
+				6BE9111C1581A92900C209F9 /* Quest */,
+				6B75508315787C620035E203 /* Hero Editor */,
+				6B75508715787C7D0035E203 /* Ocarina */,
+				6B73BBAE1577674F00BA56ED /* ZeldaTabBarController.h */,
+				6B73BBAF1577674F00BA56ED /* ZeldaTabBarController.m */,
+				6B9271F3157C26BA00D37BA9 /* ZeldaAudio.h */,
+				6B9271F4157C26BA00D37BA9 /* ZeldaAudio.m */,
+				6BDBC4E3157E2E24001EE18A /* UIView+Fade.h */,
+				6BDBC4E4157E2E24001EE18A /* UIView+Fade.m */,
+				6B73BB9115775C7200BA56ED /* Supporting Files */,
+			);
+			path = Zelda;
+			sourceTree = "<group>";
+		};
+		6B73BB9115775C7200BA56ED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6B80E7BD15816E10008D57C5 /* AppIcon-57.png */,
+				6B80E7BE15816E10008D57C5 /* AppIcon-114.png */,
+				6B9271FA157C308500D37BA9 /* Audio */,
+				6B9271F0157C081E00D37BA9 /* Backgrounds */,
+				6B9271CC157B5BCA00D37BA9 /* Button Images */,
+				6BE911291581ADC500C209F9 /* Dodongo Bomb */,
+				6B9271E1157B675D00D37BA9 /* Fonts */,
+				6B75507B15787BA80035E203 /* TabBar Images */,
+				6B73BB9915775C7200BA56ED /* ZeldaAppDelegate.h */,
+				6B73BB9A15775C7200BA56ED /* ZeldaAppDelegate.m */,
+				6B73BB9215775C7200BA56ED /* Zelda-Info.plist */,
+				6B73BB9315775C7200BA56ED /* InfoPlist.strings */,
+				6B73BB9615775C7200BA56ED /* main.m */,
+				6B73BB9815775C7200BA56ED /* Zelda-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6B75507B15787BA80035E203 /* TabBar Images */ = {
+			isa = PBXGroup;
+			children = (
+				6B9271D9157B5F9C00D37BA9 /* TabBarItem1.png */,
+				6B9271DA157B5F9C00D37BA9 /* TabBarItem2.png */,
+				6B9271DB157B5F9C00D37BA9 /* TabBarItem3.png */,
+			);
+			name = "TabBar Images";
+			sourceTree = "<group>";
+		};
+		6B75508315787C620035E203 /* Hero Editor */ = {
+			isa = PBXGroup;
+			children = (
+				6B75508015787C5D0035E203 /* ZeldaHeroEditorViewController.h */,
+				6B75508115787C5D0035E203 /* ZeldaHeroEditorViewController.m */,
+			);
+			name = "Hero Editor";
+			sourceTree = "<group>";
+		};
+		6B75508715787C7D0035E203 /* Ocarina */ = {
+			isa = PBXGroup;
+			children = (
+				6B75508415787C770035E203 /* ZeldaOcarinaViewController.h */,
+				6B75508515787C770035E203 /* ZeldaOcarinaViewController.m */,
+			);
+			name = Ocarina;
+			sourceTree = "<group>";
+		};
+		6B9271CC157B5BCA00D37BA9 /* Button Images */ = {
+			isa = PBXGroup;
+			children = (
+				6BAA2956157FD6C700CCD5EC /* OcarinaNoteButton-Highlighted.png */,
+				6BAA2953157EFAA500CCD5EC /* OcarinaNoteButton.png */,
+				6B99539D157D8407002C428E /* OcarinaPlayButton.png */,
+				6B99539F157D84D4002C428E /* OcarinaStopButton.png */,
+				6B942BFC157E425700376FB8 /* StartButton.png */,
+				6BDC7D50157C97A00019F951 /* FileButton.png */,
+			);
+			name = "Button Images";
+			sourceTree = "<group>";
+		};
+		6B9271E1157B675D00D37BA9 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				6BDC7D5B157CD2880019F951 /* AncientHylian.ttf */,
+				6B9271E2157B677300D37BA9 /* Ravenna.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		6B9271F0157C081E00D37BA9 /* Backgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				6BDC7D53157CA02E0019F951 /* Logos */,
+				6BDC7D59157CD13C0019F951 /* Default.png */,
+				6B9271F1157C215300D37BA9 /* Hyrule.png */,
+				6BE91155158337AE00C209F9 /* HeroEditor.png */,
+				6B99539B157D810F002C428E /* OcarinaBG.png */,
+			);
+			name = Backgrounds;
+			sourceTree = "<group>";
+		};
+		6B9271FA157C308500D37BA9 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				6B99538F157D21F0002C428E /* Ocarina Notes */,
+				6B9271FD157C6C7A00D37BA9 /* Zelda 25th Anniversary Symphony */,
+				6BE9113C1582D3BE00C209F9 /* FX */,
+				6BDBC4E1157E2AB0001EE18A /* FairyFountainGuitar.mp3 */,
+				6B9271FB157C308500D37BA9 /* OcarinaOfTimeIntro.mp3 */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		6B9271FD157C6C7A00D37BA9 /* Zelda 25th Anniversary Symphony */ = {
+			isa = PBXGroup;
+			children = (
+				6B9271FE157C6C7A00D37BA9 /* BalladOfTheGoddess.mp3 */,
+				6B9271FF157C6C7A00D37BA9 /* FairyFountain.mp3 */,
+				6B927200157C6C7A00D37BA9 /* GerudoValley.mp3 */,
+				6B927201157C6C7A00D37BA9 /* KakarikoVillage.mp3 */,
+				6B927202157C6C7A00D37BA9 /* MainThemeMedley.mp3 */,
+				6B927203157C6C7A00D37BA9 /* TwilightPrincessMovement.mp3 */,
+				6B927204157C6C7A00D37BA9 /* WindWakerMovement.mp3 */,
+				6B927205157C6C7A00D37BA9 /* ZeldaMedley.mp3 */,
+			);
+			path = "Zelda 25th Anniversary Symphony";
+			sourceTree = "<group>";
+		};
+		6B99538F157D21F0002C428E /* Ocarina Notes */ = {
+			isa = PBXGroup;
+			children = (
+				6B995391157D2206002C428E /* OcarinaNote1.mp3 */,
+				6B995392157D2206002C428E /* OcarinaNote2.mp3 */,
+				6B995393157D2206002C428E /* OcarinaNote3.mp3 */,
+				6B995394157D2206002C428E /* OcarinaNote4.mp3 */,
+				6B995395157D2206002C428E /* OcarinaNote5.mp3 */,
+			);
+			name = "Ocarina Notes";
+			sourceTree = "<group>";
+		};
+		6BDC7D53157CA02E0019F951 /* Logos */ = {
+			isa = PBXGroup;
+			children = (
+				6BDC7D54157CA03E0019F951 /* ZeldaLogo.png */,
+			);
+			name = Logos;
+			sourceTree = "<group>";
+		};
+		6BE9111C1581A92900C209F9 /* Quest */ = {
+			isa = PBXGroup;
+			children = (
+				6BE9112F1581B79800C209F9 /* ZeldaBomb.h */,
+				6BE911301581B79800C209F9 /* ZeldaBomb.m */,
+				6BE9112C1581B77D00C209F9 /* ZeldaDodongo.h */,
+				6BE9112D1581B77D00C209F9 /* ZeldaDodongo.m */,
+				6BE911211581A92900C209F9 /* ZeldaDodongoBombViewController.h */,
+				6BE911221581A92900C209F9 /* ZeldaDodongoBombViewController.m */,
+				6BE911231581A92900C209F9 /* ZeldaQuestLogViewController.h */,
+				6BE911241581A92900C209F9 /* ZeldaQuestLogViewController.m */,
+				6BE9115B1583479400C209F9 /* ZeldaHeroViewController.h */,
+				6BE9115C1583479400C209F9 /* ZeldaHeroViewController.m */,
+			);
+			path = Quest;
+			sourceTree = "<group>";
+		};
+		6BE911291581ADC500C209F9 /* Dodongo Bomb */ = {
+			isa = PBXGroup;
+			children = (
+				6BE911331581DF2500C209F9 /* DodongoLogo.png */,
+				6BE9113A1582088100C209F9 /* DungeonRoomWalls.png */,
+				6BE911381582059000C209F9 /* DungeonRoom.png */,
+				6BE9115E158355DA00C209F9 /* DefaultHero.png */,
+				6BE911451582F51300C209F9 /* DodongoDown.png */,
+				6BE911461582F51300C209F9 /* DodongoLeft.png */,
+				6BE911471582F51300C209F9 /* DodongoRight.png */,
+				6BE911481582F51400C209F9 /* DodongoUp.png */,
+				6BE9114E15830F7400C209F9 /* DodongoDead.png */,
+				6BE9114F15830F7500C209F9 /* DodongoExplode.png */,
+				6BE911321581DF2500C209F9 /* Bomb.png */,
+				6BE9114D15830F7400C209F9 /* BombExplode.png */,
+			);
+			name = "Dodongo Bomb";
+			sourceTree = "<group>";
+		};
+		6BE9113C1582D3BE00C209F9 /* FX */ = {
+			isa = PBXGroup;
+			children = (
+				6BE911531583101100C209F9 /* KillDodongo.wav */,
+				6BE9113D1582D40900C209F9 /* ExplodeBomb.wav */,
+				6BE9113E1582D40900C209F9 /* PlaceBomb.wav */,
+			);
+			name = FX;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6B73BB8515775C7200BA56ED /* Zelda */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B73BBA415775C7200BA56ED /* Build configuration list for PBXNativeTarget "Zelda" */;
+			buildPhases = (
+				6B73BB8215775C7200BA56ED /* Sources */,
+				6B73BB8315775C7200BA56ED /* Frameworks */,
+				6B73BB8415775C7200BA56ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Zelda;
+			productName = Zelda;
+			productReference = 6B73BB8615775C7200BA56ED /* Zelda.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6B73BB7D15775C7200BA56ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Zelda;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Stanford University";
+			};
+			buildConfigurationList = 6B73BB8015775C7200BA56ED /* Build configuration list for PBXProject "Zelda" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6B73BB7B15775C7200BA56ED;
+			productRefGroup = 6B73BB8715775C7200BA56ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6B73BB8515775C7200BA56ED /* Zelda */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6B73BB8415775C7200BA56ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B73BB9515775C7200BA56ED /* InfoPlist.strings in Resources */,
+				6B73BB9E15775C7200BA56ED /* iPhone.storyboard in Resources */,
+				6B9271DC157B5F9C00D37BA9 /* TabBarItem1.png in Resources */,
+				6B9271DD157B5F9C00D37BA9 /* TabBarItem2.png in Resources */,
+				6B9271DE157B5F9C00D37BA9 /* TabBarItem3.png in Resources */,
+				6B9271E3157B677300D37BA9 /* Ravenna.ttf in Resources */,
+				6B9271F2157C215300D37BA9 /* Hyrule.png in Resources */,
+				6B9271FC157C308500D37BA9 /* OcarinaOfTimeIntro.mp3 in Resources */,
+				6B927206157C6C7A00D37BA9 /* BalladOfTheGoddess.mp3 in Resources */,
+				6B927207157C6C7A00D37BA9 /* FairyFountain.mp3 in Resources */,
+				6B927208157C6C7A00D37BA9 /* GerudoValley.mp3 in Resources */,
+				6B927209157C6C7A00D37BA9 /* KakarikoVillage.mp3 in Resources */,
+				6B92720A157C6C7A00D37BA9 /* MainThemeMedley.mp3 in Resources */,
+				6B92720B157C6C7A00D37BA9 /* TwilightPrincessMovement.mp3 in Resources */,
+				6B92720C157C6C7A00D37BA9 /* WindWakerMovement.mp3 in Resources */,
+				6B92720D157C6C7A00D37BA9 /* ZeldaMedley.mp3 in Resources */,
+				6BDC7D51157C97A00019F951 /* FileButton.png in Resources */,
+				6BDC7D55157CA03E0019F951 /* ZeldaLogo.png in Resources */,
+				6BDC7D5A157CD13C0019F951 /* Default.png in Resources */,
+				6BDC7D5C157CD2880019F951 /* AncientHylian.ttf in Resources */,
+				6B995396157D2206002C428E /* OcarinaNote1.mp3 in Resources */,
+				6B995397157D2206002C428E /* OcarinaNote2.mp3 in Resources */,
+				6B995398157D2206002C428E /* OcarinaNote3.mp3 in Resources */,
+				6B995399157D2206002C428E /* OcarinaNote4.mp3 in Resources */,
+				6B99539A157D2206002C428E /* OcarinaNote5.mp3 in Resources */,
+				6B99539C157D810F002C428E /* OcarinaBG.png in Resources */,
+				6B99539E157D8407002C428E /* OcarinaPlayButton.png in Resources */,
+				6B9953A0157D84D4002C428E /* OcarinaStopButton.png in Resources */,
+				6BDBC4E2157E2AB0001EE18A /* FairyFountainGuitar.mp3 in Resources */,
+				6B942BFD157E425700376FB8 /* StartButton.png in Resources */,
+				6BAA2954157EFAA500CCD5EC /* OcarinaNoteButton.png in Resources */,
+				6BAA2957157FD6C700CCD5EC /* OcarinaNoteButton-Highlighted.png in Resources */,
+				6B80E7BF15816E10008D57C5 /* AppIcon-57.png in Resources */,
+				6B80E7C015816E10008D57C5 /* AppIcon-114.png in Resources */,
+				6BE911341581DF2500C209F9 /* Bomb.png in Resources */,
+				6BE911351581DF2500C209F9 /* DodongoLogo.png in Resources */,
+				6BE911391582059000C209F9 /* DungeonRoom.png in Resources */,
+				6BE9113B1582088100C209F9 /* DungeonRoomWalls.png in Resources */,
+				6BE9113F1582D40900C209F9 /* ExplodeBomb.wav in Resources */,
+				6BE911401582D40900C209F9 /* PlaceBomb.wav in Resources */,
+				6BE911491582F51400C209F9 /* DodongoDown.png in Resources */,
+				6BE9114A1582F51400C209F9 /* DodongoLeft.png in Resources */,
+				6BE9114B1582F51400C209F9 /* DodongoRight.png in Resources */,
+				6BE9114C1582F51400C209F9 /* DodongoUp.png in Resources */,
+				6BE9115015830F7500C209F9 /* BombExplode.png in Resources */,
+				6BE9115115830F7500C209F9 /* DodongoDead.png in Resources */,
+				6BE9115215830F7500C209F9 /* DodongoExplode.png in Resources */,
+				6BE911541583101100C209F9 /* KillDodongo.wav in Resources */,
+				6BE91156158337AE00C209F9 /* HeroEditor.png in Resources */,
+				6BE9115F158355DA00C209F9 /* DefaultHero.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6B73BB8215775C7200BA56ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B73BB9715775C7200BA56ED /* main.m in Sources */,
+				6B73BB9B15775C7200BA56ED /* ZeldaAppDelegate.m in Sources */,
+				6B73BBB01577674F00BA56ED /* ZeldaTabBarController.m in Sources */,
+				6B75508215787C5D0035E203 /* ZeldaHeroEditorViewController.m in Sources */,
+				6B75508615787C770035E203 /* ZeldaOcarinaViewController.m in Sources */,
+				6B9271F5157C26BA00D37BA9 /* ZeldaAudio.m in Sources */,
+				6BDBC4E5157E2E24001EE18A /* UIView+Fade.m in Sources */,
+				6BE911271581A92900C209F9 /* ZeldaDodongoBombViewController.m in Sources */,
+				6BE911281581A92900C209F9 /* ZeldaQuestLogViewController.m in Sources */,
+				6BE9112E1581B77D00C209F9 /* ZeldaDodongo.m in Sources */,
+				6BE911311581B79800C209F9 /* ZeldaBomb.m in Sources */,
+				6BE9115D1583479500C209F9 /* ZeldaHeroViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6B73BB9315775C7200BA56ED /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B73BB9415775C7200BA56ED /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6B73BB9C15775C7200BA56ED /* iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B73BB9D15775C7200BA56ED /* en */,
+			);
+			name = iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6B73BBA215775C7200BA56ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6B73BBA315775C7200BA56ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6B73BBA515775C7200BA56ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Zelda/Zelda-Prefix.pch";
+				INFOPLIST_FILE = "Zelda/Zelda-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6B73BBA615775C7200BA56ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Zelda/Zelda-Prefix.pch";
+				INFOPLIST_FILE = "Zelda/Zelda-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6B73BB8015775C7200BA56ED /* Build configuration list for PBXProject "Zelda" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B73BBA215775C7200BA56ED /* Debug */,
+				6B73BBA315775C7200BA56ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B73BBA415775C7200BA56ED /* Build configuration list for PBXNativeTarget "Zelda" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B73BBA515775C7200BA56ED /* Debug */,
+				6B73BBA615775C7200BA56ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6B73BB7D15775C7200BA56ED /* Project object */;
+}
